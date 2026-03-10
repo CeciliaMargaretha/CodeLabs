@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Simple Form</h2>
+<form action="/action_page.php">
+<label for="fname" style='font-size: 12pt'>fname:</label><br>
+<input type="text" id="fname" value="Cecil" style='font-size:11pt' ><br><br>
+<label for="lname" style='font-size: 12pt'>lname:</label><br>
+<input type="text" id="lname" value="Margaretha" style='font-size:11pt'><br><br>
+<input type="submit" value="Submit" style='font-size: 11pt'>
+</form> 
+<form>
+    <label for ="fname">first name:</label>
+    <input type="text" id="fname" name="fname" value="Cecil">
+    <label for="lname">last name:</label>
+    <input type="text" id="lname" name="lname" value="Margaretha">
+</form>
+<h2>Radio Buttons</h2>
+<p>Gender</p>
+<form>
+<input type="radio" id="male" name="gender" value="HTML">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="CSS" checked>
+<label for="female">Female</label><br>
+</form> 
+<h2>Checkboxes</h2>
+<p>Choose the kind of things you like </p>
+
+<form>
+<input type="checkbox" id="hobby1" name="hobby1" value="Games">
+<label for="hobby1"> Playing Games </label><br>
+<input type="checkbox" id="hobby2" name="hobby2" value="Exercises">
+<label for="hobby2"> Exercises</label><br>
+<input type="checkbox" id="hobby3" name="hobby3" value="Sleeping">
+<label for="hobby3"> Sleeping</label><br>
+<input type="checkbox" id="hobby4" name="hobby4" value="Studying">
+<label for="hobby4"> Studying</label><br><br>
+<input type="submit" value="Submit">
+</form> 
+
+<h2>The select Element</h2>
+<p>The select element defines a drop-down list:</p>
+<form>
+<label for="lang">Choose your favorite programming language:</label>
+<select id="lang" name="lang">
+<option value="c">C/C++</option>
+<option value="java">JAVA</option>
+<option value="python">Python</option>
+<option value="php">PHP</option>
+</select>
+<input type="submit">
+</form> 
+ <h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+  
+<form>
+<textarea name="message" rows="10" cols="30">Peppa Pig is jumping on the muddy puddle.</textarea>
+<br><br>
+<input type="submit">
+</form>
+<h2>Password field</h2>
+
+<form>
+<label for="username">Username:</label><br>
+<input type="text" id="username" name="username"><br>
+<label for="pwd">Passcode:</label><br>
+<input type="password" id="passcode" name="passcode"><br><br>
+<input type="submit" value="Submit">
+</form><br>
+<p>The characters in a password field are masked (shown as asterisks or circles).</p>
+<h2>Color Picker</h2>
+<form>
+<label for="favcolor">What is your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor" value="#ffffff"><br/><br/>
+<input type="submit" value="Submit">
+</form><br>
+ <video width="320" height="240" controls>
+<source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+</video><br>
+ <audio controls>
+ <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+</audio><br>
+<a href="codelab3Task13.html">Next Page</a><br>
+<a href="codelabTask12.html">Previous Page</a>
+
+
+
+</body>
+</html>
