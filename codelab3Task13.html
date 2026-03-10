@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Details</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6fb;
+    margin:0;
+    padding:40px;
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+    width:700px;
+    background:white;
+    padding:30px 40px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.section-title{
+    font-size:14px;
+    font-weight:bold;
+    margin:25px 0 15px;
+    border-bottom:2px solid #3f6df6;
+    padding-bottom:5px;
+    color:#3f6df6;
+}
+
+.row{
+    display:flex;
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.field{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    font-size:13px;
+    margin-bottom:5px;
+}
+
+input, select, textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:14px;
+}
+
+textarea{
+    resize:none;
+    height:70px;
+}
+
+.gender{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:8px;
+}
+
+button{
+    margin-top:20px;
+    width:150px;
+    padding:10px;
+    background:#3f6df6;
+    color:white;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.button-area{
+    text-align:center;
+}
+
+button:hover{
+    background:#2d54d6;
+}
+
+@media (max-width:768px){
+
+    .container{
+        width:100%;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Employee Details</h2>
+
+<form>
+
+<div class="section-title">01. Personal Information</div>
+
+<div class="row">
+<div class="field">
+<label>Employee Name *</label>
+<input type="text" placeholder="First Name" required>
+</div>
+
+<div class="field">
+<label>Last Name</label>
+<input type="text" placeholder="Last Name">
+</div>
+</div>
+
+<div class="row">
+<div class="field">
+<label>Starting Date</label>
+<input type="date">
+</div>
+
+<div class="field">
+<label>Birth Date</label>
+<input type="date">
+</div>
+</div>
+
+<div class="row">
+<div class="field">
+<label>Employee Type</label>
+<select>
+<option>Select</option>
+<option>Full Time</option>
+<option>Part Time</option>
+<option>Intern</option>
+</select>
+</div>
+
+<div class="field">
+<label>Gender</label>
+<div class="gender">
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="field">
+<label>Position</label>
+<input type="text" placeholder="Position">
+</div>
+</div>
+
+
+<div class="section-title">02. Location</div>
+
+<div class="row">
+<div class="field">
+<label>City</label>
+<input type="text" placeholder="City">
+</div>
+
+<div class="field">
+<label>State</label>
+<input type="text" placeholder="State">
+</div>
+</div>
+
+<div class="row">
+<div class="field">
+<label>ZIP</label>
+<input type="text" placeholder="ZIP">
+</div>
+
+<div class="field">
+<label>Address</label>
+<textarea placeholder="Address"></textarea>
+</div>
+</div>
+
+
+<div class="section-title">03. Contact Information</div>
+
+<div class="row">
+<div class="field">
+<label>Phone</label>
+<input type="text" placeholder="Phone">
+</div>
+
+<div class="field">
+<label>Email</label>
+<input type="email" placeholder="Email">
+</div>
+</div>
+
+<div class="button-area">
+<button type="submit">Register</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
